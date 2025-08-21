@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - SnapSam</title>
+    <meta name="description" content="Instructions for deleting your SnapSam account">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .delete-account-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .delete-account-content {
+            flex: 1;
+            padding: 5rem 0;
+            background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+        }
+        
+        .delete-account-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: opacity 0.3s ease;
+        }
+        
+        .back-link:hover {
+            opacity: 0.8;
+        }
+        
+        .delete-account-container h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .intro-text {
+            font-size: 1.125rem;
+            color: var(--medium-text);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .deletion-box {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .deletion-box h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+        
+        .deletion-steps {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .deletion-steps li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--medium-text);
+            line-height: 1.6;
+        }
+        
+        .deletion-steps li:last-child {
+            border-bottom: none;
+        }
+        
+        .deletion-steps strong {
+            color: var(--dark-text);
+            font-weight: 600;
+        }
+        
+        .email-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .warning-box h3 {
+            color: #991b1b;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .warning-box p {
+            color: #7f1d1d;
+            line-height: 1.6;
+        }
+        
+        .warning-box ul {
+            margin-top: 0.75rem;
+            margin-left: 1.5rem;
+            color: #7f1d1d;
+        }
+        
+        .timeline-info {
+            background: var(--light-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .timeline-info h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-info p {
+            color: var(--medium-text);
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .delete-account-container h1 {
+                font-size: 2rem;
+            }
+            
+            .deletion-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="delete-account-page">
+        <div class="delete-account-content">
+            <div class="delete-account-container">
+                <a href="index.html" class="back-link">
+                    ← Back to Home
+                </a>
+                
+                <h1>Delete Your Account</h1>
+                
+                <p class="intro-text">
+                    We're sorry to see you go. If you've decided to delete your SnapSam account, we've made the process simple and straightforward. Your privacy and data ownership are important to us.
+                </p>
+                
+                <div class="warning-box">
+                    <h3>⚠️ Before You Delete</h3>
+                    <p>Please note that deleting your account will:</p>
+                    <ul>
+                        <li>Permanently remove all your repair history and task data</li>
+                        <li>Cancel any active repair bookings or consultations</li>
+                        <li>Delete your fix streaks and achievements</li>
+                        <li>Remove you and your partner from shared conversations</li>
+                    </ul>
+                </div>
+                
+                <div class="deletion-box">
+                    <h2>How to Delete Your Account</h2>
+                    <ol class="deletion-steps">
+                        <li>
+                            <strong>Step 1:</strong> Send an email to <a href="mailto:info@leetgroup.net?subject=SnapSam%20Account%20Deletion%20Request" class="email-link">info@leetgroup.net</a>
+                        </li>
+                        <li>
+                            <strong>Step 2:</strong> Include "SnapSam Account Deletion Request" in the subject line
+                        </li>
+                        <li>
+                            <strong>Step 3:</strong> In your email, please include:
+                            <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                                <li>The email address associated with your SnapSam account</li>
+                                <li>Your username (if applicable)</li>
+                                <li>Confirmation that you want to delete your account</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Step 4:</strong> You'll receive a confirmation email once your account has been deleted
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="timeline-info">
+                    <h3>Processing Time</h3>
+                    <p>
+                        Account deletion requests are typically processed within 48 hours. You'll receive an email confirmation once your account and all associated data have been permanently removed from our systems.
+                    </p>
+                </div>
+                
+                <div class="timeline-info" style="margin-top: 1rem;">
+                    <h3>Need Help Instead?</h3>
+                    <p>
+                        If you're experiencing issues with the app or have concerns we can address, please reach out to our support team at <a href="mailto:info@leetgroup.net?subject=SnapSam%20Support" class="email-link">info@leetgroup.net</a> before deleting your account. We're here to help!
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">SnapSam</div>
+                    <p class="footer-tagline">The shared conversational hub for home repairs</p>
+                    <p class="footer-copyright">&copy; 2025 SnapSam. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
